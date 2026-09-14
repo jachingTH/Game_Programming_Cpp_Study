@@ -1,0 +1,4 @@
+
+# Local Obsidian state and compiled executables
+notes/.obsidian/
+*.exe
