@@ -21,10 +21,10 @@ public:
     {
     }
 
+    //함수 오버로딩(Overloading) 가능
     Test(int num1, int num2)
         : a(num1), b(num2)
     {
-
     }
 
     //소멸자
