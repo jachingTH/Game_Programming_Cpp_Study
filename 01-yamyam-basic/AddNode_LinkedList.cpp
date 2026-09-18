@@ -1,15 +1,19 @@
 #include <iostream>
 
-struct Node
+#include <list>
+
+/* struct Node
 {
     int data;
     Node *next;
+
+    void AddNode(Node* ,int data)
 };
 
 Node* head = nullptr;
 Node *tail = nullptr;
 
-void AddNode(int data)
+void AddNode(Node* ,int data)
 {
     if (head == nullptr)
     {
@@ -28,7 +32,52 @@ void AddNode(int data)
 
         tail = tail->next;
     }
+} */
+
+/* class Node
+{
+    int data;
+    Node *next;
+};
+
+class NodeChar
+{
+    char data;
+    Node *next;
+}; */
+
+//템플릿 함수
+template <typename T>
+T Add(T a, T b)
+{
+    return a + b;
 }
+
+//특정 자료형에 대해서 템플릿 프로그래밍에서 제외 가능
+//템플릿 특수화
+template<>
+int Add(int a, int b)
+{
+    return a - b;
+}
+
+//템플릿 클래스
+template <typename T>
+class Node
+{
+    public:
+        T data;
+        Node *next;
+};
+
+//장점 : 편리, 자료형에 관해서 자율성이 엄청 주어짐
+//단점 : 컴파일시 생성 -> 컴파일 타임 늘어남.
+
+//컴파일 타임
+//람다식
+//여러명이서 개발 -> 읽기 쉬운 코드 -> 좋은 코드
+
+
 
 int main()
 {
@@ -79,9 +128,42 @@ int main()
 
         delete pp; */
 
-        AddNode(3);
+
+        //절차지향
+        /* AddNode(3);
         AddNode(4);
         AddNode(5);
+
+        //객체지향
+        Node *p;
+        p->AddNode(3);
+
+        //절차 + 객체 => 멀티패러다임 언어
+
+
+        /* while (true)
+        {
+            if (p==nullptr)
+            {
+                break;
+            }
+
+            std::cout << p->data;
+            p = p->next;
+        } */
+
+        /* for (Node *p = head; p != nullptr; p=p->next)
+        {
+            std::cout << p->data;
+        } */
+
+        int ret = Add<int>(3, 5);
+        float ret = Add<float>(3.0f, 5.1f);
+
+        Node<float> fNode;
+        fNode.data = 10.0f;
+
+
 
         return 0;
 }

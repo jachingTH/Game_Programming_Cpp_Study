@@ -16,7 +16,7 @@ C 스타일 문자열은 마지막에 널 문자 `\0`을 둔 char 배열입니�
 
 ## 현재 상태
 
-`Cpp_cstring_Library.cpp`는 파일만 생성되어 있고 코드가 없습니다. 이 문서는 Obsidian 학습 노트를 GitHub에서 빠르게 찾기 위한 정리이며, cstring 함수 실행 결과는 아직 기록되지 않았습니다.
+`Cpp_cstring_Library.cpp`에는 `char nameA[10]`, `nameB[10]`와 `strcmp`, `strlen` 사용 초안이 추가되었습니다. 다만 `<cstring>` 헤더가 없어 표준 문자열 함수 선언을 보장하지 않으며, 결과 출력·실행 기록은 없습니다. 같은 파일에는 깊이 3의 재귀 호출 초안도 함께 있습니다.
 
 ## 다음 확인 항목
 
@@ -24,5 +24,7 @@ C 스타일 문자열은 마지막에 널 문자 `\0`을 둔 char 배열입니�
 - [ ] 빈 문자열과 한 글자 문자열의 `strlen` 확인
 - [ ] 복사 대상 버퍼 크기와 널 문자 자리 확인
 - [ ] `std::string`과 C 스타일 문자열의 사용 위치 비교
+- [ ] `<cstring>` 포함 후 `strcmp`, `strlen` 결과를 출력해 확인
+- [ ] 재귀 예제는 문자열 예제와 분리해 각각 실행
 
-정리일: 2026-09-16. 원본: Obsidian Vault의 `cpp-cstring-library-guide.md`.
+정리일: 2026-09-18. 원본: Obsidian Vault의 `cpp-cstring-library-guide.md`.
