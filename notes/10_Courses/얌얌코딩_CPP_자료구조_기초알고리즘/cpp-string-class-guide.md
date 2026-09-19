@@ -47,6 +47,6 @@
 - [ ] 255자 경계와 초과 입력 처리 확인
 - [ ] 복사와 대입 후 두 객체가 독립적인지 확인
 
-관련: [생성자·소멸자](cpp-constructor-destructor-guide.md) · [연산자 오버로딩](cpp-operator-overloading-guide.md).
+관련: [MyString·동적 메모리](cpp-mystring-dynamic-memory-guide.md) · [생성자·소멸자](cpp-constructor-destructor-guide.md) · [연산자 오버로딩](cpp-operator-overloading-guide.md).
 
-정리일: 2026-09-14. Obsidian 원본의 `cpp-string-class-guide.md`와 현재 실습 소스를 대조했습니다. 영상 번호·수강일·실행 결과는 기록되어 있지 않습니다.
+정리일: 2026-09-19. 고정 버퍼 초기 실습은 그대로 두고, 후속 동적 메모리 실습은 `MyString·동적 메모리` 문서로 분리했습니다. 영상 번호·수강일·실행 결과는 기록되어 있지 않습니다.

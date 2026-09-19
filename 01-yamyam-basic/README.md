@@ -22,6 +22,8 @@
 | AddNode·연결 리스트 | [정리](../notes/10_Courses/얌얌코딩_CPP_자료구조_기초알고리즘/cpp-addnode-linked-list-guide.md) | [실습 초안](AddNode_LinkedList.cpp) |
 | 템플릿 기초 | [정리](../notes/10_Courses/얌얌코딩_CPP_자료구조_기초알고리즘/cpp-template-basics-guide.md) | [실습 초안](AddNode_LinkedList.cpp) |
 | 연결 리스트 직접 구현 | [정리](../notes/10_Courses/얌얌코딩_CPP_자료구조_기초알고리즘/cpp-linked-list-implementation-guide.md) | [실습 초안](MakingLinkedList.cpp) |
+| MyString·동적 메모리 | [정리](../notes/10_Courses/얌얌코딩_CPP_자료구조_기초알고리즘/cpp-mystring-dynamic-memory-guide.md) | [실습 초안](MakingStringClass.cpp) |
+| 연결 리스트 메모리 구조 | [정리](../notes/10_Courses/얌얌코딩_CPP_자료구조_기초알고리즘/cpp-linked-list-memory-model-guide.md) | [실습 초안](MakingLinkedList.cpp) |
 
 ## 실습 진행 상태
 
@@ -37,6 +39,8 @@
 - 구조체 포인터·노드: 주소 연결과 head 접근 코드가 있습니다. 마지막 next 초기화와 순회 검증은 미기록입니다.
 - AddNode·연결 리스트: 템플릿 함수·클래스 실습으로 내용이 바뀌었습니다. 같은 범위의 ret 중복 선언으로 빌드 전 단계입니다.
 - 연결 리스트 직접 구현: 첫 노드 초기화는 있으나 이후 노드 연결과 소멸자 해제가 미구현입니다.
+- MyString·동적 메모리: 동적 배열·+= 초안이 있으나 대입 오타, delete[] 불일치, 길이 초기화와 중복 선언을 확인해야 합니다.
+- 연결 리스트 메모리 구조: 목표 다이어그램을 정리했으며 현재 실습이 그 연결 구조를 구현했다는 의미는 아닙니다.
 - cstring: `strcmp`·`strlen`과 재귀 초안이 추가됐으나 `<cstring>` 포함과 실행 결과 확인이 필요합니다.
 - 2026-09-14에는 노트 정리와 소스 대조를 수행했습니다. 코드 실행과 테스트는 수행하지 않았습니다.
 
@@ -58,6 +62,7 @@ VS Code의 기존 `.vscode/tasks.json`은 `C:\msys64\mingw64\bin\g++.exe`로 현
 8. AddNode 3회 뒤 모든 data를 순회 출력하고 마지막 next를 확인하기.
 9. 템플릿 일반형·특수화의 반환값을 분리한 변수로 확인하기.
 10. 직접 만든 리스트의 노드 연결·순회·소멸을 각각 확인하기.
-11. 확인한 결과만 STUDY_LOG와 해당 정리 문서에 기록하기.
+11. MyString의 할당·해제·널 종료·길이를 출력해 확인하기.
+12. 확인한 결과만 STUDY_LOG와 해당 정리 문서에 기록하기.
 
 CodingStyle_InCpp_Direct_doublePtr_searchPattern2DArr.cpp는 관련 Obsidian 노트가 아직 없어 목차에 포함하지 않았습니다. 내용이 정리되면 별도 주제로 연결합니다.
